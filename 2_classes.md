@@ -29,6 +29,11 @@
 
 # Colors
 
+const ryansCOlors = new Colors ();
+ryansColors.addColor('blue'); --- to add
+
+ryansColors.hasColor('green'); --- to check
+
 * Create a `Colors` class
 * colors has a `favorites` property
   * initialize `favorites` as an empty array

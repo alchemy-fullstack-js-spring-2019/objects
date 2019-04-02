@@ -25,7 +25,7 @@ describe('car', () => {
 
     it('has miles', () => {
       expect(carDetails.miles).toEqual(0);
-    })
+    });
   });
 
   describe('driven miles', () => {
