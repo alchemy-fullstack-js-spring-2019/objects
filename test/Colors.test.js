@@ -8,4 +8,23 @@ describe('Color Class', () => {
 
     expect(result.favorites).toEqual(expected);
   });
+  
+  it('Has a addColor method that adds colors to favorites', () => {
+    const expected = ['blue', 'red'];
+
+    const result = new Color;
+    result.addColor('blue');
+    result.addColor('red');
+
+    expect(result.favorites).toEqual(expected);
+  });
+  
+  it('Has a hasColor method that checks for colors in favorites', () => {
+    const result = new Color;
+    result.addColor('blue');
+    result.addColor('red');
+
+    expect(result.hasColor('blue')).toEqual(true);
+    expect(result.hasColor('green')).toEqual(false);
+  });
 });
