@@ -1,5 +1,5 @@
 # Make classes
-
+ 
 ## House
 
 * create a `House` class in `House.js` and `House.test.js`
