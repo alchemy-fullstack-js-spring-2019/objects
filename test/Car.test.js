@@ -17,4 +17,12 @@ describe('Car class', () => {
     it('has the expected miles', () => {
         expect(myCar.miles).toBe(0);
     });
+    it('increments miles when drive method called', () => {
+        myCar.drive(10);
+        expect(myCar.miles).toBe(10);
+    });
+    it('increments miles when drive method called again', () => {
+        myCar.drive(10);
+        expect(myCar.miles).toBe(20);
+    });
 });
