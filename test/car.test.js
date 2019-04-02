@@ -22,11 +22,19 @@ describe('car', () => {
     it('has a color', () => {
       expect(carDetails.color).toEqual('Blue');
     });
+
+    it('has miles', () => {
+      expect(carDetails.miles).toEqual(0);
+    })
   });
 
   describe('driven miles', () => {
     it('increments the miles', () => {
-      expect(carDetails.drive(20)).toEqual(20);
+      carDetails.drive(10);
+      expect(carDetails.miles).toEqual(10);
+      
+      carDetails.drive(40);
+      expect(carDetails.miles).toEqual(50);
     });
   });
 
