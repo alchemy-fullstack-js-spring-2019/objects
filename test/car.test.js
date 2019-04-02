@@ -1,10 +1,10 @@
-const { Car } = require('../lib/car');
+const { Car } = require('../lib/Car');
 
 describe('Car class', () => {
   let car = null;
 
   beforeEach(() => {
-    car = new Car('BMW', 'M4', 2019, 'black', 1000);
+    car = new Car('BMW', 'M4', 2019, 'black');
   });
 
   it('has make property', () => {
@@ -23,11 +23,25 @@ describe('Car class', () => {
     expect(car.color).toEqual('black');
   });
 
-  it('has drivenMiles property', () => {
-    expect(car.drivenMiles).toEqual(1000);
+  it('has miles', () => {
+    expect(car.miles).toEqual(0);
   });
 
   it('has drive method', () => {
-    expect(car.drive(3000)).toEqual(3000);
+    car.drive(10);
+    expect(car.miles).toEqual(10);
+
+    car.drive(50);
+    expect(car.miles).toEqual(60);
+  });
+
+  it('has static makes method', () => {
+    expect(Car.makes()).toEqual([
+      'Audi',
+      'BMW',
+      'Honda',
+      'Range Rover',
+      'Toyota'
+    ]);
   });
 });
