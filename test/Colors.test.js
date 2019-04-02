@@ -20,11 +20,6 @@ describe('Colors class', () => {
   it('has hasColor method that checks for colors in favorites array', () => {
     colors.addColor('red');
     expect(colors.hasColor('red')).toBeTruthy();
-
-    colors.addColor('blue');
-    expect(colors.hasColor('blue')).toBeTruthy();
-
-    colors.addColor('yellow');
-    expect(colors.hasColor('yellow')).toBeTruthy();
+    expect(colors.hasColor('blue')).toBeFalsy();
   });
 });
