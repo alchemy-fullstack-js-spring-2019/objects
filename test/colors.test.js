@@ -11,12 +11,21 @@ describe('Colors tests', () => {
   });
   
   describe('fav method', () => {
-    it('might work', () => {
+    it('pass colors into favorites', () => {
       colorDetails.addColor('green');
       expect(colorDetails.favorites).toEqual(['green']);
       
       colorDetails.addColor('yellow');
       expect(colorDetails.favorites).toEqual(['green', 'yellow']);
+    });
+  });
+  
+  describe('has colors', () => {
+    it('is on list', () => {
+      colorDetails.addColor('yellow');
+
+      expect(colorDetails.hasColor('yellow')).toBeTruthy();
+      expect(colorDetails.hasColor('purple')).toBeFalsy();
     });
   });
 
