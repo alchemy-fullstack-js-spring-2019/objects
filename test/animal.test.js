@@ -7,7 +7,9 @@ describe('Animal Constructor', () => {
     const input = ['Boots', 'monkey'];
     const boots = new AnimalConstructor(...input);
     const result = boots.speak();
-
+    
+    expect(boots.name).toEqual('Boots');
+    expect(boots.species).toEqual('monkey');
     expect(result).toEqual(expected);
   });
 
@@ -28,6 +30,8 @@ describe('Animal Factory', () => {
     const boots = AnimalFactory(...input);
     const result = boots.speak();
 
+    expect(boots.name).toEqual('Boots');
+    expect(boots.species).toEqual('monkey');
     expect(result).toEqual(expected);
   });
 
