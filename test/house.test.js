@@ -10,4 +10,9 @@ describe('House class', () => {
     const house = new House('portland', 3);
     expect(house.floors).toEqual(3);
   });
+
+  it('has bedrooms property', () => {
+    const house = new House('portland', 3, 5);
+    expect(house.bedrooms).toEqual(5);
+  });
 });
