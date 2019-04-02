@@ -19,6 +19,7 @@ describe('car tests', ()=> {
             expect(myCar.color).toEqual('silver');
         });
     });
+
     describe('testing drive method', ()=> {
         it('miles will start at 0', ()=> {
             expect(myCar.miles).toEqual(0);
@@ -27,6 +28,12 @@ describe('car tests', ()=> {
         it('drive will increment the miles property', ()=> {
             const totalMiles = myCar.drive(3000);
             expect(totalMiles).toEqual(3000);
+        });
+    });
+
+    describe('testing static makes', ()=> {
+        it('will return array of possible car makes', ()=> {
+            expect(Car.makes()).toEqual(['honda', 'ford', 'vw', 'jeep']);
         });
     });
 });
