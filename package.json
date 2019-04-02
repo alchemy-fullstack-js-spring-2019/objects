@@ -1,0 +1,21 @@
+{
+  "name": "objects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "test:watch": "npm run test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meganamarshall/objects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meganamarshall/objects/issues"
+  },
+  "homepage": "https://github.com/meganamarshall/objects#readme"
+}
