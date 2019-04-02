@@ -25,4 +25,8 @@ describe('Car class', () => {
         myCar.drive(10);
         expect(myCar.miles).toBe(20);
     });
+    it('returns an array of makes when makes() is called', () => {
+        const result = myCar.makes();
+        expect(result).toEqual(['Honda', 'Ford', 'Toyota', 'Tesla', 'Subaru', 'Chevrolet']);
+    });
 });
