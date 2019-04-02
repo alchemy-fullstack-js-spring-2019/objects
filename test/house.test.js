@@ -2,6 +2,7 @@ const { House } = require('../lib/house');
 
 describe('House class', () => {
   let house = null;
+  
   beforeEach(() => {
     house = new House('Portland', 2, 5, 3);
   });
