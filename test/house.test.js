@@ -1,8 +1,8 @@
-const { House } = require('../lib/house');
+const { House } = require('../lib/House');
 
 describe('House class', () => {
   let house = null;
-  
+
   beforeEach(() => {
     house = new House('Portland', 2, 5, 3);
   });
