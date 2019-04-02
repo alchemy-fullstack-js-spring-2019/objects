@@ -21,4 +21,8 @@ describe('House class', () => {
   it('has bathrooms property', () => {
     expect(house.bathrooms).toEqual(3);
   });
+
+  it('has price method', () => {
+    expect(house.price()).toEqual(1000000);
+  });
 });
