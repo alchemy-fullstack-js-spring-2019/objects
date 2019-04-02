@@ -8,4 +8,7 @@ describe('User', () => {
     it('gets the hose again', () => {
         expect(user.email).toBe('bonniebmcneil@gmail.com');
     });
+    it('toString', () => {
+        expect(user.toString()).toBe('Bonnie | bonniebmcneil@gmail.com');
+    });
 });
