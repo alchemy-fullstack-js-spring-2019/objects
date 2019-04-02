@@ -23,7 +23,16 @@ describe('Car Class', () => {
 
   it('Has MILES property', () => {
     const car1 = new Car('Honda', 'Odyssey', 2008, 'Silver', 100000);
-    expect(car1.miles).toEqual(100000);  
+    expect(car1.miles).toEqual(0);  
+  });
+
+  it('Cumulative total of miles driven', () => {
+    const car1 = new Car('Honda', 'Odyssey', 2008, 'Silver', 100000);
+    car1.drive(10);
+    expect(car1.miles).toEqual(10);
+
+    car1.drive(50);
+    expect(car1.miles).toEqual(60);
   });
 
 });
