@@ -21,4 +21,16 @@ describe('car class', () => {
         const myCar = new Car('honda', 'fit', 2017, 'gray', 0);
         expect(myCar.miles).toEqual(0);
     });
+    it('has a method for drive', () => {
+        const myCar = new Car('honda', 'fit', 2017, 'gray', 0);
+        myCar.drive(15);
+        expect(myCar.miles).toEqual(15);
+    });
+    // it('has an x static method', () => {
+    //     expect(Car.colors()).toEqual([
+    //         'red',
+    //         'blue',
+    //         'green'
+    //     ]);
+    // })
 });
