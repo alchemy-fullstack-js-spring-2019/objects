@@ -30,4 +30,3 @@ describe('House exists', () => {
     });
   });
 });
-
