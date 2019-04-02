@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/meganamarshall/objects/issues"
   },
-  "homepage": "https://github.com/meganamarshall/objects#readme"
+  "homepage": "https://github.com/meganamarshall/objects#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "jest": "^24.6.0"
+  }
 }
