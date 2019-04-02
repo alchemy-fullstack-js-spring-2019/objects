@@ -20,4 +20,9 @@ describe('Car class', () => {
     const car = new Car('BMW', 'M4', 2019, 'black');
     expect(car.color).toEqual('black');
   });
+
+  it('has miles property', () => {
+    const car = new Car('BMW', 'M4', 2019, 'black', 1000);
+    expect(car.miles).toEqual(1000);
+  });
 });
