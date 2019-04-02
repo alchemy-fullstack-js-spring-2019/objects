@@ -1,4 +1,4 @@
-const House = require('../lib/house');
+const House = require('../lib/House');
 
 describe('House class', () => {
   it('House has location', () => {
