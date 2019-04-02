@@ -63,6 +63,6 @@ describe('colors!', () => {
     expect(newColor.hasColor('green')).toEqual(false);
   });
 
-
-
 });
+
+
