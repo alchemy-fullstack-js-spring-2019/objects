@@ -23,7 +23,8 @@ describe('car class function', () => {
   });
 
   it('drive method', () => {
-    expect(car1.drive(10000)).toEqual(10000);
+    expect(car1.drive(10000)).toEqual(130000);
+    expect(car1.drive(10000)).toEqual(140000);
   });
 
   it('makes static method', () => {
