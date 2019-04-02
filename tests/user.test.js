@@ -17,4 +17,12 @@ describe('user class', () => {
   it('prints the user name and email when toString is called', () => {
     expect(newUser.toString()).toBe('Ben | name@email.com');
   });
+  it('resents the password if the old password matches', () => {
+    expect(newUser.resetPassword('123abc', '456def')).toBe('456def');
+  });
+  it('throws an error if oldPassword doenst match current password', () => {
+    expect(() => {
+      newUser.resetPassword('abc123', 'twz677');
+    }).toThrow();
+  });
 });
