@@ -23,6 +23,6 @@ describe('Creates House Class', () => {
 
   it('Has a method CALCULATE', () => {
     const option1 = new House('Montavilla', 'wood', 4, 2);
-    expect(option1.calculate()).toEqual(100000)
+    expect(option1.calculate()).toEqual(100000);
   });
 });
