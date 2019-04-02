@@ -10,7 +10,7 @@ describe('constructor function', () => {
 
 describe('factory function', () => {
     it('makes a cat and the cat speaks', () => {
-        const cat = new AnimalFactory('Barry', 'black cat');
+        const cat = AnimalFactory('Barry', 'black cat');
         const result = cat.speak();
         expect(result).toBe('My name is Barry and I am a black cat');
     });
