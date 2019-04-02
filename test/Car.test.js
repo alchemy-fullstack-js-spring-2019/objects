@@ -33,4 +33,5 @@ describe('Car class method tests', () => {
     const expected = ['Fjord', 'Hundeh', 'Toyboggan', 'Evade', 'Lamb-guini'];
     expect(makesArray).toEqual(expected);
   });
+  
 });
