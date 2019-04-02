@@ -28,7 +28,15 @@
   make (from your `makes` static method), it throws an error
 
 # Colors
+ ``` js
+ const ryansColors = newColors();
+ ryansColors.addColor('red');
+ ryansColors.addColor('blue');
 
+ ryansColors.hasColor('blue');
+ ryansColors.hasColor('green');
+ ```
+ 
 * Create a `Colors` class
 * colors has a `favorites` property
   * initialize `favorites` as an empty array
