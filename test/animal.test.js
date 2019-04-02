@@ -14,10 +14,10 @@ describe('animal object creators', () => {
             const dog = new AnimalConstructor('megan', 'dog');
             expect(dog.species).toEqual('dog');
         });
-        it('has a method speak', () => {
-            const dog = new AnimalConstructor('megan', 'dog');
-            expect(dog.speak()).toEqual('my name is megan and I am a dog');
-        });
+        // it('has a method speak', () => {
+        //     const dog = new AnimalConstructor('megan', 'dog');
+        //     expect(dog.speak()).toEqual('my name is megan and I am a dog');
+        // });
     });
     describe('AnimalFactory', () => {
         it('has a name property', () => {
