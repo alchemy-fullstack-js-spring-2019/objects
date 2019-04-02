@@ -35,5 +35,11 @@ describe('car tests', ()=> {
         it('will return array of possible car makes', ()=> {
             expect(Car.makes()).toEqual(['honda', 'ford', 'vw', 'jeep']);
         });
+        it('throws an error when a car is made that is not one of these makes', ()=> {
+            expect(()=> {
+                //eslint-disable-next-line
+                const notACar = new Car ('jaguar', 'xj6', 1985, 'white');
+            }).toThrow();
+        });
     });
 });
