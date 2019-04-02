@@ -14,4 +14,7 @@ describe('user class', () => {
   it('returns the user password', () => {
     expect(newUser.password).toBe('123abc');
   });
+  it('prints the user name and email when toString is called', () => {
+    expect(newUser.toString()).toBe('Ben | name@email.com');
+  });
 });
