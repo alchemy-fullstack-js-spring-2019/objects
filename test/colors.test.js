@@ -9,4 +9,9 @@ describe('messing with colors class', () => {
     const newColors = new Colors();
     expect(newColors.addColor('blue')).toEqual(['blue']);
   });
+  it('uses the hasColor method on the Colors class to see if a color is in the faves array, returns true if it is', () => {
+    const newColors = new Colors();
+    newColors.addColor('blue');
+    expect(newColors.hasColor('blue')).toBeTruthy();
+  });
 });
