@@ -37,5 +37,9 @@ describe('AnimalFactory Function', () => {
     const dog = AnimalFactory('Oso', 'dog', 'woof');
     expect(dog.sound).toEqual('woof');
   });
-
+  
+  it('', () => {
+    const dog = AnimalFactory('Oso', 'dog', 'woof');
+    expect(dog.speak()).toEqual('Oso is a dog and says woof');
+  });
 });
