@@ -11,4 +11,12 @@ describe('User', () => {
     it('toString', () => {
         expect(user.toString()).toBe('Bonnie | bonniebmcneil@gmail.com');
     });
+    it('change password', () => {
+        user.resetPassword('hello', 'goodbye');
+        expect(user.password).toBe('goodbye');
+    });
+    it('don\'t change password', () => {
+        user.resetPassword('goobee', 'hello');
+        expect(user.password).toBe('goodbye');
+    });
 });
