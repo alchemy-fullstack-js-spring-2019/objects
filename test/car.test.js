@@ -10,4 +10,9 @@ describe('Car class', () => {
     const car = new Car('BMW', 'M4');
     expect(car.model).toEqual('M4');
   });
+
+  it('has year property', () => {
+    const car = new Car('BMW', 'M4', 2019);
+    expect(car.year).toEqual(2019);
+  });
 });
