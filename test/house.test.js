@@ -15,4 +15,9 @@ describe('House class', () => {
     const house = new House('portland', 3, 5);
     expect(house.bedrooms).toEqual(5);
   });
+
+  it('has bathrooms property', () => {
+    const house = new House('portland', 3, 5, 4);
+    expect(house.bathrooms).toEqual(4);
+  });
 });
