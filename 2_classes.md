@@ -41,9 +41,9 @@
 # User
 
 * Create a `User` class in `User.js` and a `User.test.js`
-* a user has an id, name, email, and password
-  * name, email, and password are passed into the constructor
-  * id is generated (use the `uuid` module `npm i uuid`)
+<!-- * a user has an id, name, email, and password -->
+  <!-- * name, email, and password are passed into the constructor -->
+  <!-- * id is generated (use the `uuid` module `npm i uuid`) -->
 * create a `toString` method
   * `toString` should print the users name and email `Ryan | ryan@test.com`
 * create a `resetPassword` method
