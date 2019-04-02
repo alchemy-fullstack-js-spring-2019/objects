@@ -1,7 +1,7 @@
 const Car = require('../lib/car');
+const myCar = new Car('Subaru', 'Outback', 2013, 'black', 40000);
 
 describe('car class', () => {
-  const myCar = new Car('Subaru', 'Outback', 2013, 'black', 40000);
   it('returns the make of the car', () => {
     expect(myCar.make).toBe('Subaru');
   });
@@ -31,5 +31,11 @@ describe('car class', () => {
       'Chevrolet',
       'Porshe'
     ]);
+  });
+  it('throws an error if make isnt in makes list', () => {
+    expect(() => {
+      const myCar = new Car('Subaruu', 'Outback', 2013, 'black', 40000);
+      myCar.make;
+    }).toThrow();
   });
 });
