@@ -1,4 +1,4 @@
-const { AnimalConstructor } = require('../lib/animals');
+const { AnimalConstructor, AnimalFactory } = require('../lib/animals');
 
 describe('AnimalConstructor Function', () => {
   it('Name property', () => {
@@ -22,3 +22,9 @@ describe('AnimalConstructor Function', () => {
   });
 });
 
+describe('AnimalFactory Function', () => {
+  it('Name property', () => {
+    const dog = AnimalFactory('Oso', 'dog', 'woof');
+    expect(dog.name).toEqual('Oso');
+  });
+});
