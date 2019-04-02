@@ -1,4 +1,4 @@
-const { Colors } = require('../lib/Colors');
+const Colors = require('../lib/Colors');
 
 describe('Colors class', () => {
   let colors = null;

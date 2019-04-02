@@ -1,4 +1,4 @@
-const { User } = require('../lib/User');
+const User = require('../lib/User');
 
 describe('User class', () => {
   let user = null;

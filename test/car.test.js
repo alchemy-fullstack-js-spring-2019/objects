@@ -1,4 +1,4 @@
-const { Car } = require('../lib/Car');
+const Car = require('../lib/Car');
 
 describe('Car class', () => {
   let car = null;

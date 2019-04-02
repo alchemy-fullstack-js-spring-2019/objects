@@ -1,4 +1,4 @@
-const { House } = require('../lib/House');
+const House = require('../lib/House');
 
 describe('House class', () => {
   let house = null;
