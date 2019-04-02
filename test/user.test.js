@@ -31,4 +31,10 @@ describe('user tests', () => {
     }).toThrow();
   });
 
+  test('increments counter each time User used', () => {
+    new User('cara', 'email@email.com', 'password');
+    new User('dogg', 'dog@email.com', 'password');
+    expect(User.count()).toBe('7');
+  });
+
 });
