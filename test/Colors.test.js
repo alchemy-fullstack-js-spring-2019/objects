@@ -6,4 +6,14 @@ describe('Colors class', () => {
         const result = myColor.favorites;
         expect(result).toEqual([]);
     });
+    it('add a color to favorites', () => {
+        myColor.addColor('red');
+        const result = myColor.favorites;
+        expect(result).toEqual(['red']);
+    });
+    it('add another color to favorites', () => {
+        myColor.addColor('blue');
+        const result = myColor.favorites;
+        expect(result).toEqual(['red', 'blue']);
+    });
 });
