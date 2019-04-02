@@ -12,7 +12,7 @@ describe('User class', () => {
         expect(user.password).toEqual('bobdoodle');
     });
     it('has property id', () => {
-        expect(user.id).toEqual(expect.anything());
+        expect(user.id).toEqual(expect.any(String));
     });
     
 });
