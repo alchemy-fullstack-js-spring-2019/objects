@@ -15,8 +15,7 @@ describe('User', () => {
         user.resetPassword('hello', 'goodbye');
         expect(user.password).toBe('goodbye');
     });
-    it('don\'t change password', () => {
-        user.resetPassword('goobee', 'hello');
-        expect(user.password).toBe('goodbye');
+    it('don\'t change password', () => {   
+        expect(() => user.resetPassword('goobee', 'hello')).toThrow('invalid password');
     });
 });
