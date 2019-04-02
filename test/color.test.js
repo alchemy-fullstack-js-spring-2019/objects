@@ -1,4 +1,4 @@
-const ColorCreate = require('../lib/color');
+const ColorCreate = require('../lib/Color');
 
 describe('color funciton', () => {
   it('adding to favorites', () => {
