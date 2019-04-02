@@ -18,4 +18,11 @@ describe('User', () => {
     it('don\'t change password', () => {   
         expect(() => user.resetPassword('goobee', 'hello')).toThrow('invalid password');
     });
+    // it('counts number of users that have been created- first user', () => {
+    //     expect(User.count()).toBe(1);
+    // });
+    // it('counts number of users that have been created- second user', () => {
+    //     const travis = new User('Travis', 'bush', 'hi');
+    //     expect(User.count()).toBe(2);
+    // });
 });

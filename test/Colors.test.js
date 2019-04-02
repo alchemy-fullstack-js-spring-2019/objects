@@ -16,11 +16,11 @@ describe('Colors class', () => {
         const result = myColor.favorites;
         expect(result).toEqual(['red', 'blue']);
     });
-    it('sees if a color is a favorite', () => {
+    it('checks if a color is a favorite', () => {
         const result = myColor.hasColor('blue');
         expect(result).toBe(true);
     });
-    it('sees if a color is a not favorite', () => {
+    it('checks if a color is a not favorite', () => {
         const result = myColor.hasColor('green');
         expect(result).toBe(false);
     });
