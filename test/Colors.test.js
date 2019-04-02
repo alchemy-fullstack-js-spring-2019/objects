@@ -17,6 +17,7 @@ describe('Color Class', () => {
     result.addColor('red');
 
     expect(result.favorites).toEqual(expected);
+    expect(result.favorites).toContainEqual('red');
   });
   
   it('Has a hasColor method that checks for colors in favorites', () => {
@@ -25,6 +26,8 @@ describe('Color Class', () => {
     result.addColor('red');
 
     expect(result.hasColor('blue')).toEqual(true);
+    expect(result.hasColor('blue')).toBeTruthy();
     expect(result.hasColor('green')).toEqual(false);
+    expect(result.hasColor('green')).toBeFalsy();
   });
 });
