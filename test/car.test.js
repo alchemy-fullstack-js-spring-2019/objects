@@ -8,5 +8,8 @@ describe('messing the a car class', () => {
   it('applies the drive method to a new car class and is returned how many miles the car has driven', () => {
     const newCar = new Car('hyundai', 'genesis', 2016, 'white');
     expect(newCar.drive(200)).toEqual(200);
-  })
+  });
+  it('applies the static make method to MAIN CLASS and is returned an array of valid cars', () => {
+    expect(Car.makes()).toEqual(['lexus', 'hyundai', 'toyota']);
+  });
 });
