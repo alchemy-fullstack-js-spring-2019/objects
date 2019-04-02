@@ -33,5 +33,9 @@ describe('Car class method tests', () => {
     const expected = ['Fjord', 'Hundeh', 'Toyboggan', 'Evade', 'Lamb-guini'];
     expect(makesArray).toEqual(expected);
   });
-  
+  it('throws error if invalid make provided', () => {
+    expect(() => {
+      const badCar = new Car('Ford', 'Model Yeet', 2042, 'lime');
+    }).toThrow();
+  });
 });
