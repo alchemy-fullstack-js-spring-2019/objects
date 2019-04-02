@@ -1,14 +1,21 @@
 const House = require('../lib/House');
 
 describe('House class', () => {
-    it('makes a House with 1 floor 2 bed 1 bath, returns price 5250', () => {
-        const myHouse = new House('Portland', 1, 2, 1);
+    const myHouse = new House('Portland', 1, 2, 1);
+    it('has a location', () => {
+        expect(myHouse.location).toBe('Portland');
+    });
+    it('has floors', () => {
+        expect(myHouse.floors).toBe(1);
+    });
+    it('has bedrooms', () => {
+        expect(myHouse.bedrooms).toBe(2);
+    });
+    it('has bathrooms', () => {
+        expect(myHouse.bathrooms).toBe(1);
+    });
+    it('has a price of 5250', () => {
         const result = myHouse.price();
         expect(result).toBe(5250);
-    });
-    it('makes a House in Portland', () => {
-        const myHouse = new House('Portland', 1, 2, 1);
-        const result = myHouse.location;
-        expect(result).toBe('Portland');
     });
 });

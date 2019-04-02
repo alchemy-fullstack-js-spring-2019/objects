@@ -26,7 +26,7 @@ describe('Car class', () => {
         expect(myCar.miles).toBe(20);
     });
     it('returns an array of makes when makes() is called', () => {
-        const result = myCar.makes();
+        const result = Car.makes();
         expect(result).toEqual(['Honda', 'Ford', 'Toyota', 'Tesla', 'Subaru', 'Chevrolet']);
     });
 });
