@@ -17,4 +17,16 @@ describe('Car Class', () => {
     result.drive(10);
     expect(result.miles).toEqual(110);
   });
+  
+  it('Has makes static that returns an array of valic makes', () => {
+    const expected = ['Honda', 'Ford', 'Saab', 'Jeep'];
+    const makes = Car.makes();
+    expect(makes).toEqual(expected);
+  });
+  
+  // it('Has a catch for valid makes', () => {
+  //   const expected = 'Error: Beep is not a valid make';
+  //   const result = new Car('Beep', 'Jump', 2018, 'Yellow');
+  //   expect(result).toEqual(expected);
+  // });
 });
