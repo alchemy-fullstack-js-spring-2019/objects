@@ -17,3 +17,11 @@ describe('House Class properties test', () => {
     expect(result.bathrooms).toEqual(2.5);
   });
 });
+
+describe('House Class methods test', () => {
+  it('has the price method', () => {
+    const expected = '$58065';
+    const result = new House('Texas', 3, 8, 2.5);
+    expect(result.price()).toEqual(expected);
+  });
+});
