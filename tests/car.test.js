@@ -20,6 +20,9 @@ describe('car class', () => {
   it('increments the miles property by drivenMiles', () => {
     expect(myCar.drive(5000)).toBe(45000);
   });
+  it('increments the miles another 50 with drivenMiles', () => {
+    expect(myCar.drive(50)).toBe(45050);
+  });
   it('returns a list of different makes when makes() is called', () => {
     expect(Car.makes()).toEqual([
       'Ford',
