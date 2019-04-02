@@ -29,4 +29,7 @@ describe('Car class', () => {
         const result = Car.makes();
         expect(result).toEqual(['Honda', 'Ford', 'Toyota', 'Tesla', 'Subaru', 'Chevrolet']);
     });
+    it('throws an error if a car is made with an invalid make', () => {
+        expect(() => new Car('red', 'floop', 9, 'fleep')).toThrow('invalid make');
+    });
 });
