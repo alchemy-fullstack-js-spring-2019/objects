@@ -24,9 +24,10 @@ describe('Car Class', () => {
     expect(makes).toEqual(expected);
   });
   
-  // it('Has a catch for valid makes', () => {
-  //   const expected = 'Error: Beep is not a valid make';
-  //   const result = new Car('Beep', 'Jump', 2018, 'Yellow');
-  //   expect(result).toEqual(expected);
-  // });
+  it('Throws for invalid makes', () => {
+    const expected = 'Error: Beep is not a valid make';
+    expect(() => {
+      new Car('Beep', 'Jump', 2018, 'Yellow');
+    }).toThrowError(expected);
+  });
 });
