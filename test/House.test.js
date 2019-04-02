@@ -1,6 +1,6 @@
 const House = require('../lib/House');
 
-describe('house class', () => {
+describe('ho0use class', () => {
     it('has location property', () => {
         const cabin = new House('woods', 1, 2, 0);
         expect(cabin.location).toEqual('woods');
