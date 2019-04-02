@@ -4,10 +4,14 @@ describe('User class', () => {
   let user = null;
 
   beforeEach(() => {
-    user = new User('Leslie');
+    user = new User('Leslie', 'leslie@test.com');
   });
 
-  it('has a name property', () => {
+  it('has name property', () => {
     expect(user.name).toBe('Leslie');
+  });
+
+  it('has email property', () => {
+    expect(user.email).toBe('leslie@test.com');
   });
 });
