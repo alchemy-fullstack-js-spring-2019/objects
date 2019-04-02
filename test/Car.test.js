@@ -18,3 +18,19 @@ describe('Car class properties test', () => {
     expect(result.miles).toEqual(0);
   });
 });
+
+describe('Car class method tests', () => {
+  let car = null;
+  beforeEach(() => {
+    car = new Car('Fjord', 'Model Yeet', 2042, 'lime');
+  });
+  it('adds miles when drive method called', () => {
+    car.drive(42);
+    expect(car.miles).toEqual(42);
+  });
+  it('lists available car makes when makes method called', () => {
+    const makesArray = Car.makes();
+    const expected = ['Fjord', 'Hundeh', 'Toyboggan', 'Evade', 'Lamb-guini'];
+    expect(makesArray).toEqual(expected);
+  });
+});
