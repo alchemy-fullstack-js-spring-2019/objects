@@ -7,5 +7,18 @@ module.exports = class User {
     this.email = email;
     this.password = password;
   }
+
+  toString() {
+    return `${this.name} | ${this.email}`;
+  }
+
+  resetPassword(oldPassword, newPassword) {
+    if(oldPassword === this.password) {
+      this.password = newPassword;
+    }
+    else {
+      throw 'old password and current password does not match';
+    }
+  }
 };
 
