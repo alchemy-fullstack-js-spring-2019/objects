@@ -28,6 +28,10 @@ describe('animal object creators', () => {
       const dog = AnimalFactory('rover', 'dog');
       expect(dog.species).toEqual('dog');
     });
+    it('has a speak method', () => {
+      const dog = AnimalFactory('rover', 'dog');
+      expect(dog.speak()).toEqual('My name is rover and I think of myself as a dog');
+    });
   });
 
 });
