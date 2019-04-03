@@ -14,5 +14,17 @@ describe('User class', () => {
     it('has property id', () => {
         expect(user.id).toEqual(expect.any(String));
     });
+    it('has toString method', () => {
+        expect(user.toString()).toEqual('Doodlebob | doodlebob@gmail.com');
+    });
+    it('has resetPassword method', () => {
+        const user = new User('DoodleBob', 'doodlebob@gmail.com', 'bobdoodle');
+        user.resetPassword('bobdoodle', 'fish');
+        expect(user.password).toEqual('fish');
+    });
+    it('throws error if resetPassword has wrong old password', () => {
+        const user = new User('DoodleBob', 'doodlebob@gmail.com', 'bobdoodle');
+        expect(user.resetPassword('baby', 'dog')).toThrow('Old password is incorrect');
+    });
     
 });
