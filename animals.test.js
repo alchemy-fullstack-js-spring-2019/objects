@@ -26,7 +26,7 @@ describe('animal object creators', () => {
 
 describe('AnimalFactory', () => {
   it('has a name property', () => {
-    const cat = AnimalFactory('goober', 'cat');
+    const cat = new AnimalFactory('goober', 'cat');
     expect(cat.name).toEqual('goober');
   });
 });
