@@ -33,4 +33,10 @@ describe('User Class', () => {
     const result = user.password;
     expect(result).toEqual(expected);
   });
+
+  it('throws if supplied password is incorrect', () => {
+    expect(() => {
+      user.changePassword('fdsf', 'fdjsoaf');
+    }).toThrow();
+  });
 });
