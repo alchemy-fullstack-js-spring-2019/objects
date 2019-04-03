@@ -1,0 +1,25 @@
+{
+  "name": "objects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "test:watch": "npm run test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcornelius4/objects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcornelius4/objects/issues"
+  },
+  "homepage": "https://github.com/dcornelius4/objects#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "jest": "^24.6.0"
+  }
+}
