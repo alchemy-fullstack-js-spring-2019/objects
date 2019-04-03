@@ -4,7 +4,7 @@ function AnimalConstructor(name, species) {
 } 
 
 AnimalConstructor.prototype.speak = function() {
-  return `My name is ${this.name}`;
+  return `My name is ${this.name} and I am a ${this.species}`;
 };
 
 module.exports = {
