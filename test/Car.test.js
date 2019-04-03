@@ -35,7 +35,7 @@ describe('Car class method tests', () => {
   });
   it('throws error if invalid make provided', () => {
     expect(() => {
-      const badCar = new Car('Ford', 'Model Yeet', 2042, 'lime');
+      new Car('Ford', 'Model Yeet', 2042, 'lime');
     }).toThrow();
   });
 });
