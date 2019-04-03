@@ -39,6 +39,16 @@ describe('animal object creators', () => {
       const dog = new AnimalClass('rover', 'dog');
       expect(dog.name).toEqual('rover');
     });
-  })
+
+    it('has a species property', () => {
+      const dog = new AnimalClass('rover', 'dog');
+      expect(dog.species).toEqual('dog');
+    });
+
+    it('has a speak method', () => {
+      const dog = new AnimalClass('rover', 'dog');
+      expect(dog.species).toEqual('dog');
+    });
+  });
 
 });
