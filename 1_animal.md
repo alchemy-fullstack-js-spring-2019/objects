@@ -28,3 +28,4 @@ Test that all three implementation behave the same.
     parameters: name and species
   * A `speak` method should be defined
   * `speak` should return a string
+notes.
