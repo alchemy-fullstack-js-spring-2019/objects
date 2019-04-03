@@ -47,7 +47,7 @@ describe('animal object creators', () => {
 
     it('has a speak method', () => {
       const dog = new AnimalClass('rover', 'dog');
-      expect(dog.species).toEqual('dog');
+      expect(dog.speak()).toEqual('My name is rover and I think of myself as a dog');
     });
   });
 
