@@ -21,7 +21,7 @@ function AnimalClass(name, species) {
 }
 AnimalClass.prototype.speak = function() {
   return `My name is ${this.name} and I am a ${this.species}`;
-}
+};
 
 
 module.exports = {
