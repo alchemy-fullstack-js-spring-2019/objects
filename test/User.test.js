@@ -25,4 +25,8 @@ describe('user function', () => {
         const profile = new User('Fran', 'Fran@fran.com', 'fran');
         expect(profile.resetPassword('fran', 'billy')).toEqual('billy');
     });
+    it('error thrown if doesnt have proper params', () => {
+        const profile = new User('Fran', 'Fran@fran.com', 'fran');
+        expect(profile.resetPassword()).toThrow('error');
+    });
 });
