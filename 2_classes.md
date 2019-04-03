@@ -1,5 +1,5 @@
 # Make classes
-
+ 
 ## House
 
 * create a `House` class in `House.js` and `House.test.js`
@@ -28,6 +28,11 @@
   make (from your `makes` static method), it throws an error
 
 # Colors
+
+const ryansCOlors = new Colors ();
+ryansColors.addColor('blue'); --- to add
+
+ryansColors.hasColor('green'); --- to check
 
 * Create a `Colors` class
 * colors has a `favorites` property
