@@ -24,8 +24,10 @@ describe('creates User class', () => {
     });
     it('throws error if oldPassword doesnt match password', () => {
         const oldPassword = 'bob';
-        const newPassword = 'cindy';
-        expect(user.resetPassword(oldPassword, newPassword)).toThrow();
+        const newPassword = 'secret2';
+        expect(() => {
+            user.resetPassword(oldPassword, newPassword);
+        }).toThrow();
     });
     it('prints username and email in string', () => {
         expect(user.toString()).toEqual('megan | megan@megan.com');
