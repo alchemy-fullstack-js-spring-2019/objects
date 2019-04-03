@@ -14,4 +14,7 @@ describe('creates User class', () => {
     it('has a password property', () => {
         expect(user.password).toEqual('secret');
     });
+    it('has a uid property', () => {
+        expect(user.uid).toEqual(expect.any(String));
+    });
 });
