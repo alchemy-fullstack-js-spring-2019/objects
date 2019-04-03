@@ -1,4 +1,4 @@
-const { AnimalConstructor, AnimalFactory, AnimalClass } = require('../lib/Animal.js');
+const { AnimalConstructor, AnimalFactory, AnimalClass } = require('../lib/Animal');
 
 describe('animal object creators', () => {
 
