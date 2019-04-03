@@ -23,7 +23,14 @@ describe('User Class', () => {
   it('returns string of name and email', () => {
     const expected = 'Tommy | tommy@tran.com';
     const result = user.toString();
-    
+
+    expect(result).toEqual(expected);
+  });
+
+  it('changes the password if the supplied password is correct', () => {
+    const expected = 'P@ssw0rd';
+    user.changePassword('******', 'P@ssw0rd');
+    const result = user.password;
     expect(result).toEqual(expected);
   });
 });
