@@ -17,10 +17,10 @@ describe('animal object creators', () => {
     const cat = new AnimalConstructor('goober', 'cat');
     expect(cat.species).toEqual('cat');
   });
-  // it('has a species property', () => {
-  //   const cat = new AnimalConstructor('goober');
-  //   expect(cat.speak()).toEqual('My name is ');
-  // });
+  it('has a species property', () => {
+    const cat = new AnimalConstructor('goober', 'cat');
+    expect(cat.speak()).toEqual('My name is goober and I am a cat');
+  });
 });
 
 // describe('AnimalFactory', () => {
