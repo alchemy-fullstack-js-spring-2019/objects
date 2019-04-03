@@ -7,6 +7,3 @@ describe('using a constructor function', () => {
   });
 });
 
-// describe('using a factory function', () => {
-//   it
-// })
