@@ -1,0 +1,32 @@
+{
+  "name": "objects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --verbose",
+    "test:watch": "npm run test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T-Tommy/objects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T-Tommy/objects/issues"
+  },
+  "homepage": "https://github.com/T-Tommy/objects#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "jest": "^24.6.0"
+  },
+  "dependencies": {
+    "uuid": "^3.3.2"
+  }
+}
