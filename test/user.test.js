@@ -1,4 +1,5 @@
 const { User } = require('../lib/user');
+const { MemoryDatabase } = require('../lib/user');
 
 describe('user tests', () => {
   test('User has id, name, email, and password', () => {
@@ -37,4 +38,21 @@ describe('user tests', () => {
     expect(User.count()).toBe(7);
   });
 
+});
+
+describe('MemoryDatabse', () => {
+  test('adds obj to store', () => {
+    const memory = new MemoryDatabase;
+    const obj = { name: 'superman' };
+    const copy = memory.create(obj);
+    expect(copy.name).toEqual('superman');
+  });
+
+  test('find object by _id', () => {
+    const memory = new MemoryDatabase;
+    const obj = { name: 'superman' };
+    const copy = memory.create(obj);
+    const id = copy._id;
+    expect(memory.findById(id)).toEqual({ ...copy });
+  });
 });
