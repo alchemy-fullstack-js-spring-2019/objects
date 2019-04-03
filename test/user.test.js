@@ -5,7 +5,13 @@ describe('creates User class', () => {
     beforeEach(() => {
         user = new User('megan', 'megan@megan.com', 'secret');
     });
-    it('has an id property', () => {
+    it('has a name property', () => {
         expect(user.name).toEqual('megan');
     });
-})
+    it('has an email property', () => {
+        expect(user.email).toEqual('megan@megan.com');
+    });
+    it('has a password property', () => {
+        expect(user.password).toEqual('secret');
+    });
+});
