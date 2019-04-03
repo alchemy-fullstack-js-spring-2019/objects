@@ -1,5 +1,6 @@
 const {
-  AnimalConstructor
+  AnimalConstructor,
+  AnimalFactory,
 } = require('./animals');
 
 describe('animal object creators', () => {
@@ -23,9 +24,12 @@ describe('animal object creators', () => {
   });
 });
 
-// describe('AnimalFactory', () => {
-//   it('has a name property')
-// });
+describe('AnimalFactory', () => {
+  it('has a name property', () => {
+    const cat = AnimalFactory('goober', 'cat');
+    expect(cat.name).toEqual('goober');
+  });
+});
 
 // describe('AnimalClass', () => {
 // it('has a name property', () => {
