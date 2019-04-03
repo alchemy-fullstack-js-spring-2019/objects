@@ -18,7 +18,13 @@ describe('creates User class', () => {
         expect(user.uid).toEqual(expect.any(String));
     });
     it('resets password', () => {
+        const oldPassword = 'secret';
         const newPassword = 'secret2';
-        expect(user.resetPassword(newPassword)).toEqual('secret2');
+        expect(user.resetPassword(oldPassword, newPassword)).toEqual('secret2');
+    });
+    it('throws error if oldPassword doesnt match password', () => {
+        const oldPassword = 'bob';
+        const newPassword = 'cindy';
+        expect(user.resetPassword(oldPassword, newPassword)).toThrow();
     });
 });
