@@ -1,0 +1,45 @@
+const { AnimalConstructor, AnimalFactory } = require('../lib/animals');
+
+describe('AnimalConstructor Function', () => {
+  it('Name property', () => {
+    const dog = new AnimalConstructor('Oso', 'dog', 'woof');
+    expect(dog.name).toEqual('Oso');
+  });
+
+  it('Species property', () => {
+    const dog = new AnimalConstructor('Oso', 'dog', 'woof');
+    expect(dog.species).toEqual('dog');
+  });
+
+  it('Sound property', () => {
+    const dog = new AnimalConstructor('Oso', 'dog', 'woof');
+    expect(dog.sound).toEqual('woof');
+  });
+
+  it('', () => {
+    const dog = new AnimalConstructor('Oso', 'dog', 'woof');
+    expect(dog.speak()).toEqual('Oso is a dog and says woof');
+  });
+});
+
+describe('AnimalFactory Function', () => {
+  it('Name property', () => {
+    const dog = AnimalFactory('Oso', 'dog', 'woof');
+    expect(dog.name).toEqual('Oso');
+  });
+
+  it('Species property', () => {
+    const dog = AnimalFactory('Oso', 'dog', 'woof');
+    expect(dog.species).toEqual('dog');
+  });
+
+  it('Sound property', () => {
+    const dog = AnimalFactory('Oso', 'dog', 'woof');
+    expect(dog.sound).toEqual('woof');
+  });
+  
+  it('', () => {
+    const dog = AnimalFactory('Oso', 'dog', 'woof');
+    expect(dog.speak()).toEqual('Oso is a dog and says woof');
+  });
+});
