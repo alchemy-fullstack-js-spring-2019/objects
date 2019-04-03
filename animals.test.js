@@ -9,9 +9,13 @@ describe('animal object creators', () => {
       expect(cat.name).toEqual('goober');
     });
   });
-  it('has a species property', () => {
+  it('has a name property', () => {
     const cat = new AnimalConstructor('goober', 'cat');
     expect(cat.name).toEqual('goober');
+  });
+  it('has a species property', () => {
+    const cat = new AnimalConstructor('goober', 'cat');
+    expect(cat.species).toEqual('cat');
   });
   // it('has a species property', () => {
   //   const cat = new AnimalConstructor('goober');
