@@ -13,11 +13,21 @@ function AnimalFactory(name, species) {
 }
 AnimalFactory.prototype.speak = function() {
   return `My name is ${this.name} and I am a ${this.species}`;
+};
+
+function AnimalClass(name, species) {
+  this.name = name;
+  this.species = species;
 }
+AnimalClass.prototype.speak = function() {
+  return `My name is ${this.name} and I am a ${this.species}`;
+}
+
 
 module.exports = {
   AnimalConstructor,
-  AnimalFactory
+  AnimalFactory,
+  AnimalClass
 };
 
 // class AnimalClass {
