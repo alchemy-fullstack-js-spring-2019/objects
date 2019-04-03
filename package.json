@@ -1,7 +1,6 @@
 {
   "name": "objects",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose",
@@ -25,5 +24,10 @@
   },
   "dependencies": {
     "uuid": "^3.3.2"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "description": ""
 }
