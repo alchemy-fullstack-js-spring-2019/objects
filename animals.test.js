@@ -1,5 +1,3 @@
-
-
 const {
   AnimalConstructor
 } = require('./animals');
