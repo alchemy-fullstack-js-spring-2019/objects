@@ -26,9 +26,8 @@ describe('User class', () => {
         user.resetPassword('bobdoodle', 'fish');
         expect(user.password).toEqual('fish');
     });
-    // This test fails no matter what - I've checked with Mac and Ryan and we haven't found a solution
-    // it('throws error if resetPassword has wrong old password', () => {
-    //     const user = new User('DoodleBob', 'doodlebob@gmail.com', 'bobdoodle');
-    //     expect(user.resetPassword('baby', 'dog')).toThrowError('Old Password is Incorrect');
-    // });
+    it('throws error if resetPassword has wrong old password', () => {
+        const user = new User('DoodleBob', 'doodlebob@gmail.com', 'bobdoodle');
+        expect(() => user.resetPassword('baby', 'dog')).toThrow();
+    });
 });
