@@ -1,0 +1,26 @@
+{
+  "name": "objects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "animals.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "test:watch": "npm run test -- --watch",
+    "start": "node lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marty42Martinez/objects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marty42Martinez/objects/issues"
+  },
+  "homepage": "https://github.com/Marty42Martinez/objects#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "jest": "^24.6.0"
+  }
+}
