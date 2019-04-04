@@ -27,6 +27,6 @@ describe('user function', () => {
     });
     it('error thrown if doesnt have proper params', () => {
         const profile = new User('Fran', 'Fran@fran.com', 'fran');
-        expect(profile.resetPassword()).toThrow('error');
+        expect(() => profile.resetPassword('wrong', 'thing')).toThrow('error');
     });
 });
