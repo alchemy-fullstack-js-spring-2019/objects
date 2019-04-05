@@ -17,9 +17,9 @@ describe('Colors class', () => {
     expect(colors.favorites).toContainEqual('red');
   });
 
-  // it('can check if favorites hasColor', () => {
-  //   colors.addColor('red');
-    // expect(colors.hasColor('red')).toBeTruthy();
-    
-  // });
+  it('can check if favorites hasColor', () => {
+    colors.addColor('red');
+    expect(colors.hasColor('red')).toBeTruthy();
+    expect(colors.hasColor('blue')).toBeFalsy();
+  });
 });
