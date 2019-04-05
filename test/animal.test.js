@@ -50,5 +50,4 @@ describe('animal object creators', () => {
       expect(dog.speak()).toEqual('My name is rover and I think of myself as a dog');
     });
   });
-
 });
