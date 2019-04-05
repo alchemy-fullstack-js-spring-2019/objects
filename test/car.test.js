@@ -33,10 +33,15 @@ describe('car constructor', () => {
   it('has a makes-static method', () => {
     const car = new Car('Honda', 'CRV', 2012, 'red');
     expect(Car.makes()).toEqual([
-      'honda',
+      'Honda',
       'toyota',
       'ford',
       'dodge'
     ]);
+  });
+  it('throws error when car is made w/invalid make', () => {
+    expect(() => {
+      const badCar = new Car('datsun', 'CRV', 2012, 'red');
+    }).toThrow();
   });
 });
