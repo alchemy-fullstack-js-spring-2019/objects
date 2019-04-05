@@ -1,6 +1,5 @@
 const Car = require('../lib/car');
 
-
 describe('car constructor', () => {
 
   let car = null;

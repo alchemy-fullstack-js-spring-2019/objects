@@ -2,7 +2,7 @@ const Colors = require('../lib/colors');
 
 describe('Colors class', () => {
 
-  let colors = null;;
+  let colors = null;
 
   beforeEach(() => {
     colors = new Colors();
