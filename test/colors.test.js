@@ -12,7 +12,9 @@ describe('Colors class', () => {
     expect(colors.favorites).toEqual([]);
   });
 
-  // it('has addColor ')
+  it('can add new faves with addColor', () => {
+    colors.addColor('red');
+  });
 
   // it('hasColor takes a color parameter', () => {
   //   hasColor('green');
