@@ -22,4 +22,12 @@ describe('car constructor', () => {
     const car = new Car('Honda', 'CRV', 2012, 'red');
     expect(car.miles).toEqual(0);
   });
+  it('can be driven', () => {
+    const car = new Car('Honda', 'CRV', 2012, 'red');
+    car.drive(10);
+    expect(car.miles).toEqual(10);
+
+    car.drive(50);
+    expect(car.miles).toEqual(60);
+  });
 });
