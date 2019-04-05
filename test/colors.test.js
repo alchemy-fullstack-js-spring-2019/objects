@@ -2,7 +2,7 @@ const Colors = require('../lib/colors');
 
 describe('Colors class', () => {
 
-  let colors;
+  let colors = null;;
 
   beforeEach(() => {
     colors = new Colors();
@@ -14,10 +14,12 @@ describe('Colors class', () => {
 
   it('can add new faves with addColor', () => {
     colors.addColor('red');
+    expect(colors.favorites).toContainEqual('red');
   });
 
-  // it('hasColor takes a color parameter', () => {
-  //   hasColor('green');
-    // expect(colors.hasColor).toEqual('green')
+  // it('can check if favorites hasColor', () => {
+  //   colors.addColor('red');
+    // expect(colors.hasColor('red')).toBeTruthy();
+    
   // });
 });
