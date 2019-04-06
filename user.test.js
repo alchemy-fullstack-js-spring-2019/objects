@@ -1,5 +1,4 @@
 const User = require('./user');
-// const newUser = new User('Leo', 'leo@leo.leo', 'leo123');
 
 
 describe('user class', () => {
