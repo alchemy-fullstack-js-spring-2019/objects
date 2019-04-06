@@ -30,13 +30,3 @@ module.exports = {
   AnimalClass
 };
 
-// class AnimalClass {
-//   constructor(name, species) {
-//     this.name = name;
-//     this.species = species;
-//   }
-// speak() {
-//   return `my name is ${this.name} and I am a ${this.species}`
-// }
-// }
-

@@ -6,13 +6,12 @@ class House {
     this.bathrooms = bathrooms;
   }
 
-  // price() {
-  //   return `This house in ${this.location} is selling for ${this.price}`;
-
-  // }
-
+  price() {
+    return (this.floors +
+      this.bedrooms +
+      this.bathrooms) *
+      100000;
+  }
 }
-
-
 
 module.exports = House;
