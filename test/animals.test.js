@@ -50,4 +50,9 @@ describe('AnimalClass', () => {
     const dog = new AnimalClass('rover', 'dog');
     expect(dog.species).toEqual('dog');
   });
+
+  it('has a method speak', () => {
+    const dog = new AnimalClass('rover', 'dog');
+    expect(dog.speak()).toEqual('My name is rover and I am a dog');
+  });
 });
