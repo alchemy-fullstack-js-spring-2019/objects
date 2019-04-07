@@ -1,16 +1,15 @@
-const {
-  favoriteColors
-} = require('../lib/color');
+const { FavoriteColors }
+ = require('../lib/color');
 
-describe('has a list of favorite colors', () => {
+describe('favorite color', () => {
   let colors = null;
   beforeEach(() => {
-    colors = new colors();
+    colors = new FavoriteColors();
   }); 
     
   it('', () => {
     
-    color.favoriteColors('red');
-    expect(color.addColor).toEqual('red');
+    colors.favoriteColors('red');
+    expect(colors.addColor).toEqual('red');
   });
 });
