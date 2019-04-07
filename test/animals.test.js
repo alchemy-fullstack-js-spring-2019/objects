@@ -14,4 +14,9 @@ describe('animal object creators', () => {
       expect(dog.species).toEqual('dog');
     });
   });
+
+  it('has a speak property', () => {
+    const dog = new AnimalConstructor('rover', 'dog');
+    expect(dog.speak()).toEqual('My name is rover and I am a dog');
+  });
 });
