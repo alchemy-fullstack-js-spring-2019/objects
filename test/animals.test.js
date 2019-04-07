@@ -27,4 +27,14 @@ describe('AnimalFactory', () => {
     const dog = AnimalFactory('rover', 'dog');
     expect(dog.name).toEqual('rover');
   });
+
+  it('has a species property', () => {
+    const dog = AnimalFactory('rover', 'dog');
+    expect(dog.species).toEqual('dog');
+  });
+
+  it('has a speak method', () => {
+    const dog = AnimalFactory('rover', 'dog');
+    expect(dog.speak()).toEqual('My name is rover and I am a dog');
+  });
 });
