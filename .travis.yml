@@ -5,5 +5,4 @@ before_script:
   - npm i jsdom
 script:
   - npx eslint .
-  - npx qunit test/index.js
-© 2019 GitHub, Inc.
+  © 2019 GitHub, Inc.
