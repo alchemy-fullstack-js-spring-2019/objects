@@ -1,19 +1,16 @@
-const {
-  Colors
-} = require('../lib/Colors');
+const Colors = require('../lib/Colors');
 
 describe('Colors', () => {
   let colors = null;
-
   beforeEach(() => {
     colors = new Colors();
   });
 
-  it('has favorites property', () => {
+  it('has favorites colors', () => {
     expect(colors.favorites).toEqual([]);
   });
 
-  it('can add new favorites with color', () => {
+  it('can add new favorites with addColor', () => {
     colors.addColor('red');
     expect(colors.favorites).toContainEqual('red');
   });
