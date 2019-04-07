@@ -8,7 +8,7 @@ describe('CarClass', () => {
   });
   it('has miles', () => {
       
-  })
+  });
   it('car can be driven', () => {
 
   });
