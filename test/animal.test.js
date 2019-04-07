@@ -56,7 +56,7 @@ describe('animal class function', () => {
   it('returns the name and species together', () => {
     const animal = new AnimalClass('Katniss', 'Cat');
     expect(animal.name && animal.species).toEqual('Katniss' && 'Cat');
-  });
+  }); // but class/constructors require it
   it('returns the name and species together with a different test', () => {
     const animal = new AnimalClass('Katniss', 'Cat');
     expect(animal.name + animal.species).toEqual('Katniss' + 'Cat');
