@@ -41,11 +41,11 @@ describe('animal factory function', () => {
   it('returns the name', () => {
     const animal = new AnimalFactory('Larry', 'Llama');
     expect(animal.name).toEqual('Larry'); 
-  }); // works with "new" keyword (in factory fn)
+  });
   it('returns the species', () => {
     const animal = AnimalFactory('Larry', 'Llama');
     expect(animal.species).toEqual('Llama');
-  }); // works without "new" keyword(in factory fn)
+  });
   it('can speak', () => {
     const animal = AnimalFactory('Larry', 'Llama');
     expect(animal.speak()).toEqual('Hi! I am Larry the Llama.');
@@ -56,7 +56,7 @@ describe('animal class function', () => {
   it('returns the name and species together', () => {
     const animal = new AnimalClass('Katniss', 'Cat');
     expect(animal.name && animal.species).toEqual('Katniss' && 'Cat');
-  }); // but class/constructors require it
+  });
   it('returns the name and species together with a different test', () => {
     const animal = new AnimalClass('Katniss', 'Cat');
     expect(animal.name + animal.species).toEqual('Katniss' + 'Cat');
