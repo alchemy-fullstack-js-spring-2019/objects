@@ -5,13 +5,16 @@ describe('colors', () => {
   beforeEach(() => {
     colors = new Colors();
   });
+
   it('has favorites list', () => {
     expect(colors.favorites).toEqual([]);
   });
+
   it('can add new favorites with addColor', () => {
     colors.addColor('mauve');
     expect(colors.favorites).toContainEqual('mauve');
   });
+  
   it('can check if favorites hasColor', () => {
     colors.addColor('mauve');
     expect(colors.hasColor('mauve')).toBeTruthy();

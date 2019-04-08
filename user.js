@@ -19,7 +19,6 @@ class User {
     }
     return `${this.name} | ${this.email}`;
   }
-
 }
 
 module.exports = User;

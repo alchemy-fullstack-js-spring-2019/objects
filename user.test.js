@@ -1,6 +1,5 @@
 const User = require('./user');
 
-
 describe('user class', () => {
   let user = null;
   beforeEach(() => {

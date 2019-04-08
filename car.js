@@ -10,5 +10,4 @@ module.exports = class Car {
   drive(miles) {
     this.miles += miles;
   }
-  
 };
