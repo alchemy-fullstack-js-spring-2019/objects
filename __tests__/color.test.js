@@ -6,10 +6,21 @@ describe('favorite color', () => {
   beforeEach(() => {
     colors = new FavoriteColors();
   }); 
+
+  it('is a list of favorite colors', () => {
+    expect(colors.favorite).toEqual([]);
+  });
     
-  it('', () => {
+  it('can add color to a list of favorite colors', () => {
     
-    colors.favoriteColors('red');
+    colors.addColor('red');
     expect(colors.addColor).toEqual('red');
   });
+
+  it('can check has a favorite color', () => {
+    colors.addColor('blue');
+    expect(colors.hasColor('blue')).toBeTruthy();
+    expect(colors.hasColors('green')).toBeFalsy();
+  });
+
 });
